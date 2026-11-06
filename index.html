@@ -1,0 +1,231 @@
+<!DOCTYPE html
+<html lang="zh-Hant"
+<head>
+   
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="走進台中文學館，尋訪日式老宿舍群、百年老榕樹與文學步道，透過專屬地圖、場館比較與影音探索舊城區的文藝氣息。">
+    <meta name="author" content="HTML 盧紋庭">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:title" content="台中文學館報導｜舊城區的墨香綠洲">
+    <meta property="og:description" content="走讀台中文學館的日式建築群與百年榕樹，搭配展館對照表、現場照片、影音導覽及地圖指引。">
+    <meta property="og:image" content="https://travel.taichung.gov.tw/image/62886/1024x768">
+    <meta property="og:image:alt" content="台中文學館日式建築與綠意園區景觀">
+    <meta property="article:published_time" content="2026-10-07">
+    <meta property="article:modified_time" content="2026-10-21">
+  
+    <title>台中文學館報導｜HW07 外部 CSS 與相對路徑練習</title>
+   
+    <link rel="stylesheet" href="css/hw07.css">
+</head>
+<body>
+   
+    <header id="top">
+       
+        <h1>台中文學館：舊城區的墨香綠洲</h1>
+        <p><small>文學走讀 · 日式建築 · 府城記憶</small></p>
+        <p><strong>從木造官舍到百年老榕，在喧囂城市中翻閱在地詩篇。</strong></p>
+       
+        <p>本期焦點：<mark class="reading-focus">日式宿舍群與文學步道</mark>，從展館場域延伸到在地人文地圖。</p>
+       
+        <p>作者：HTML 盧紋庭｜報導整理日期：<time datetime="2026-10-21">2026 年 11 月 04 日</time></p>
+      
+        <p><small class="report-disclaimer">本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+    </header> <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">文學館緣起與空間</a></li>
+            <li><a href="#highlights">空間特色與走讀路線</a></li>
+            <li><a href="#table">展館比較與觀察重點</a></li>
+            <li><a href="#photo">園區建築與老榕樹</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#map">位置地圖</a></li>
+            <li><a href="#tips">走讀小提醒</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+    
+    <hr>
+    
+    <main id="main-content">
+       
+        <article aria-label="台中文學館專題報導">
+           
+            <section id="intro">
+                <h2>一、文學館緣起與空間</h2>
+               
+                <p>
+                    坐落於台中市西區樂群街巷弄間的台中文學館，前身為日治時期的警察宿舍群。
+                    經市府文化局細心修復後，於 <strong>2015 年 4 月外觀修復完成</strong>正式開園，
+                    蛻變為全台少數以「文學」為主題的公辦園區，為老舊社區注入溫潤的人文書香。
+                </p>
+                <p>
+                    園區占地約0.88公頃，整體建築群完整保留了日式黑瓦、木造雨淋板與傳統走廊的建築特色。
+                    內部錯落著常設展館、主題特展館、研習講堂、兒童文學館及文創賣店等空間，
+                    不僅承載了在地作家的創作脈絡，也串聯起當代的藝文推廣活動。
+                </p>
+                <p>
+                    漫步於此，不論是欣賞木構建築的細緻工藝，或是駐足於戶外的詩牆造景，
+                    這裡就像是一本立體的文學選集，靜靜等待每一位訪客細細咀嚼。
+                </p>
+               
+                <p>館址位置：台中市西區樂群街 38 號。<br>核心亮點：古蹟建築群、文學展覽、老樹綠地。</p>
+            </section>
+            <hr>
+            <section id="highlights">
+                <h2>二、空間特色與走讀路線</h2>
+                <h3>不可錯過的的三大風貌</h3>
+                
+                <ul>
+                    <li><strong>日式木造美學：</strong>保留了日治警察宿舍的格局與細膩木構造，散發濃厚時代韻味。</li>
+                    <li><strong>文學與自然共生：</strong>園區中央矗立高聳的巨大老榕樹，交織出壯觀的氣根牆與詩意綠蔭。</li>
+                    <li><strong>多元展覽體驗：</strong>結合常設文學史料、互動繪本區與藝文講堂，動靜皆宜。</li>
+                </ul>
+                <h3>建議走讀順序</h3>
+               
+                <p class="route-note">以下為本篇報導規劃的動線建議，提供讀者探索時參考。</p>
+              
+                <ol>
+                    <li>自樂群街入口步入園區，先感受日式黑瓦屋頂與木雨淋板的建築立面。</li>
+                    <li>走進常設展館與特展空間，深入了解台中文學發展史與前輩作家的手稿足跡。</li>
+                    <li>移步至文學公園中央，在百年老榕樹下感受陽光灑落與微風中的詩句倒影。</li>
+                    <li>參訪兒童文學館或文創小舖，隨後可順道轉往鄰近的第五市場品嘗在地日常美食。</li>
+                </ol>
+            </section>
+            <hr>
+            <section id="table">
+                <h2>三、展館比較與觀察重點</h2>
+                
+                <table>
+                   
+                    <caption>台中文學館核心展區與觀察指南</caption>
+                    
+                    <thead>
+                        <tr>
+                          
+                            <th scope="col">展區名稱</th>
+                            <th scope="col">空間屬性與功能</th>
+                            <th scope="col">推薦觀察角度</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <!-- scope="row" 表示這個 th 是本列的標題。 -->
+                            <th scope="row">常設展館</th>
+                            <td>展示在地文學發展脈絡與作家的創作年表</td>
+                            <td>日式宿舍內裝格局、作家手稿及歷史文獻</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">兒童文學館</th>
+                            <td>提供親子共讀與啟蒙閱讀的專屬空間</td>
+                            <td>繪本選書、多媒體互動裝置與親切氛圍</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">文學公園（榕樹區）</th>
+                            <td>結合綠地景觀與戶外裝置的開放場域</td>
+                            <td>百年老榕樹氣根盤根、文學詩牆與曲水流觴造景</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id="photo">
+                <h2>四、園區建築與老榕樹</h2>
+                
+                <figure>
+                    
+                    <img
+                        src="https://travel.taichung.gov.tw/image/62886/1024x768"
+                        alt="台中文學館日式木造建築與綠意景觀"
+                        width="480">
+                    <figcaption>
+                        台中文學館園區內典雅的日式木造建築與綠意盎然的環境。
+                        圖片來源：<a href="https://travel.taichung.gov.tw/" target="_blank" rel="noopener noreferrer">臺中觀光旅遊網「臺中文學館」</a>。
+                    </figcaption>
+                </figure>
+            </section>
+            <hr>
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過精選影片帶您遠端漫步台中文學館，領略舊宿舍群與文學公園的獨特風貌。</p>
+                
+                <figure>
+                    <iframe
+                        class="video-frame"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/n4q_d8Tu-Dg"
+                        title="悠閒生活：台中文學館介紹影片"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                    <figcaption>影片：[台中文學公園 心靈的綠洲 ]｜發布者：悠閒生活。</figcaption>
+                </figure>
+                <p><a href="https://youtu.be/n4q_d8Tu-Dg" target="_blank" rel="noopener noreferrer">在 YouTube 觀看台中文學館導覽短片（另開分頁）</a></p>
+                <p><small>影音內容皆由外部創作者發布，實際展覽與開放狀況請依官方最新公告為主。</small></p>
+                <p><small>本機預覽請使用 Live Server；若直接開啟 HTML 出現錯誤 153，請改用 HTTP 預覽或上方 YouTube 連結。</small></p>
+            </section>
+            
+            <section id="map">
+                <h2>六、位置地圖：找到台中文學館</h2>
+                <p>台中文學館位處台中市西區核心，地址為<strong>樂群街38號</strong>。
+                    下方地圖標註了園區確切座標，方便讀者規劃造訪路線與周邊街區探訪。</p>
+                
+                <iframe
+                    class="map-frame"
+                    src="https://maps.google.com/maps?q=24.1388,120.6723&amp;z=16&amp;output=embed"
+                    width="480"
+                    height="360"
+                    title="台中文學館位置 Google 地圖"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <p><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%87%BA%E4%B8%AD%E6%96%87%E5%AD%B8%E9%A4%A8%2C%E8%87%BA%E4%B8%AD%E5%B8%82" target="_blank" rel="noopener noreferrer">在 Google 地圖開啟台中文學館（另開分頁）</a></p>
+                <p><small>位置資訊由 Google 地圖提供；抵達後請遵循現場指標與園區規範。</small></p>
+            </section>
+            <hr>
+        
+            <aside id="tips" aria-labelledby="tips-title">
+                <h2 id="tips-title">走讀小提醒</h2>
+                <details open>
+                    <summary>出發前與走讀時，請記得這三件事</summary>
+                    <ul>
+                        <li>備妥輕便飲用水與防曬用品，輕鬆享受戶外散步。</li>
+                        <li>進入木造館舍內部參觀時，務必配合脫鞋或穿襪等維護古蹟之規定。</li>
+                        <li>可隨身攜帶筆記或相機捕捉靈感；若需引用資料請做好出處標註。</li>
+                    </ul>
+                </details>
+            </aside>
+            <hr>
+            <section id="sources">
+                <h2>七、資料來源</h2>
+                <p>本內容依下列參考文獻與網路資源整理，動線規劃與觀察重點由作者自行梳理。</p>
+                
+                <ul>
+                    <li><a href="https://www.tlm.taichung.gov.tw/" target="_blank" rel="noopener noreferrer">台中市政府文化局：台中文學館官方網站</a></li>
+                    <li><a href="https://travel.taichung.gov.tw/" target="_blank" rel="noopener noreferrer">臺中觀光旅遊網：臺中文學館介紹</a></li>
+                    <li><a href="https://youtu.be/n4q_d8Tu-Dg" target="_blank" rel="noopener noreferrer">YouTube：台中文學館影像導覽</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 1 月 04 日。</small></p>
+            </section>
+        </article>
+    </main>
+    <hr>
+    
+    <footer>
+        <p><strong>第七次 HTML 與 CSS 作業｜台中文學館報導</strong></p>
+        <p><small>作者：盧紋庭 · 更新日期：2026 年 11 月 04 日</small></p>
+        <p><small>CSS 教學參考：<a href="https://steam.oxxostudio.tw/category/css/info/how-to-use.html">STEAM：開始使用 CSS（方法三：link 標記）</a>。</small></p>
+        <p><small>文字內容為自主改寫與資料整理；照片與影片版權歸原作者所有。本文僅為課堂作業。</small></p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
